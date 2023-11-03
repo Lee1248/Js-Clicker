@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head onload="newFunc">
+  <link rel="stylesheet" href="./styles.css">
+<script>
+  
+  
+    var num = 0;
+    var _upg = false;
+    var _clk = false;
+    var spau = 0;
+    var _sp = false;
+  
+  
+function myFunction() {
+  num++;
+  if(_upg == true) {
+    num++;
+  }
+  if(_sp == true) {
+    num = num + 4;
+  }
+  document.getElementById("btn").innerHTML = num;
+}
+  
+  
+  function atclk() {
+    num++;
+    document.getElementById("btn").innerHTML = num;
+  }
+  
+  
+function upgrade() {
+  if(_upg == false && num >= 100) {
+  _upg = true;
+  num = num - 100;
+    document.getElementById("btn").innerHTML = num;
+    document.getElementById("upg").innerHTML = "Bought";
+  }
+  
+}
+  
+  
+  function upgrade2() {
+    if(num >= 400) {
+      _clk = true;
+      num = num - 400;
+      setInterval(atclk, 1000);
+    document.getElementById("btn").innerHTML = num;
+    }
+  }
+  
+  
+  function upgrade3() {
+    if(num >= 1400) {
+      _clk2 = true;
+      num = num - 1400;
+      setInterval(atclk, 250);
+      spau++;
+    document.getElementById("btn").innerHTML = num;
+    }
+  }
+  
+  
+  function multiAndAutoclk() {
+    if(_sp == false && spau >= 10) {
+      _sp = true;
+      setInterval(atclk, 50);
+    }
+  }
+  
+  
+</script>
+</head>
+<body>
+  <details>
+    <button id="upg" type="button" onclick="upgrade()" style="font-size: 80%; width: 200px;">x2 Clicks (100)</button>
+    <button id="upg2" type="button" onclick="upgrade2()"style="font-size: 80%; width: 200px">Autoclicker (400)</button>
+    <button id="upg3" type="button" onclick="upgrade3()"style="font-size: 80%; width: 200px">Super Autoclicker (1.4k)</button>
+    <button id="upgUt" type="button" onclick="multiAndAutoclk()"style="font-size: 80%; width: 200px">Ultra Hand (Own 10 Sp. Autoclicker)</button>
+  </details>
+<button id="btn" type="button" onclick="myFunction()">0</button>
+</body>
+</html> 
