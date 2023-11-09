@@ -11,7 +11,9 @@ h1 {
   background-color: gray;
 }
 p {
-  color: red;
+  font-family: courier;
+  font-size: 70%;
+  margin: auto;
 }
 button {
   display: block;
@@ -23,9 +25,10 @@ button {
   width: 300px;
   block-size: 100px;
   color: white;
-  border-color: black;
-  border-width: 3px;
+  border-color: white;
+  border-width: 5px;
   font-family: courier;
+  border-radius: 15px;
 }
 
 .container {
@@ -52,4 +55,7 @@ details {
   font-size: 40px;
   background-color: gray;
   margin: 20px;
+  font-family: courier;
+  border-color: blue;
+  border-radius: 45px
 }

@@ -9,6 +9,7 @@
   
 function myFunction() {
   num++;
+    m1++;
   if(_upg == true) {
     num++;
   }
@@ -61,7 +62,6 @@ function upgrade() {
     if(_sp == false && spau >= 10) {
       _sp = true;
       setInterval(atclk, 50);
+        document.getElementById("upgUt").innerHTML = "Bought";
     }
   }
-  
-  
