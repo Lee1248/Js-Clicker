@@ -59,3 +59,9 @@ details {
   border-color: blue;
   border-radius: 45px
 }
+
+.ref {
+  align-content: center;
+  text-align: center;
+  font-family: courier;
+}
