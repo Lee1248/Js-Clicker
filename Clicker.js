@@ -1,4 +1,4 @@
-    var num = document.cookie.toInt;
+    var num = document.cookie;
     var _upg = false;
     var _clk = false;
     var spau = 0;
