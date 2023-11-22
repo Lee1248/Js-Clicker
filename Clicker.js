@@ -8,15 +8,14 @@
 function myFunction() {
   num++;
     m1++;
-    document.cookie = "num";
   if(_upg == true) {
     num++;
-      document.cookie = "num";
   }
   if(_sp == true) {
     num = num + 4;
   }
   document.getElementById("btn").innerHTML = num;
+    document.cookie = "num";
 }
   
   
