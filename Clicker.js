@@ -1,9 +1,8 @@
-    var num = 0;
+    var num = document.cookie.toInt;
     var _upg = false;
     var _clk = false;
     var spau = 0;
     var _sp = false;
-    var num = document.cookie;
   
 function myFunction() {
   num++;
@@ -22,6 +21,7 @@ function myFunction() {
   function atclk() {
     num++;
     document.getElementById("btn").innerHTML = num;
+      
   }
   
   
