@@ -1,15 +1,17 @@
- 
     var num = 0;
     var _upg = false;
     var _clk = false;
     var spau = 0;
     var _sp = false;
+    var num = document.cookie;
   
 function myFunction() {
   num++;
     m1++;
+    document.cookie = "num";
   if(_upg == true) {
     num++;
+      document.cookie = "num";
   }
   if(_sp == true) {
     num = num + 4;
