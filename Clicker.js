@@ -1,4 +1,4 @@
-    var num = document.cookie;
+    var num = 0;
     var _upg = false;
     var _clk = false;
     var spau = 0;
@@ -14,7 +14,6 @@ function myFunction() {
     num = num + 4;
   }
   document.getElementById("btn").innerHTML = num;
-    document.cookie = "num";
 }
   
   
